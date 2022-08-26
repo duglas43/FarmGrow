@@ -26,5 +26,5 @@ https://duglas43.github.io/FarmGrow/
 
 ## Скриншот
 
-![App Screenshot](./dist/assets/Screenshot_5.png)
+![App Screenshot](./dist/assets/img/Screenshot_5.png)
 
