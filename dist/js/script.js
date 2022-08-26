@@ -91,6 +91,14 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+  function onDocumentReady() {
+    resizeCircle();
+    translateCircles();
+    mainTextAppearance();
+    activatePromoElem();
+    activatePromoAnimation();
+  }
+  onDocumentReady();
   titles.forEach((item) => {
     gsap.fromTo(
       item,
@@ -188,15 +196,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     );
   });
-
-  function onDocumentReady() {
-    resizeCircle();
-    translateCircles();
-    mainTextAppearance();
-    activatePromoElem();
-    activatePromoAnimation();
-  }
-  onDocumentReady();
   window.addEventListener("resize", () => {
     resizeCircle();
     translateCircles();
@@ -234,20 +233,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 });
-
-// gsap.registerPlugin(ScrollTrigger);
-// // gsap.registerPlugin(DrawSVGPlugin);
-// gsap.to(".block", {
-//   scrollTrigger: ".block", // start the animation when ".box" enters the viewport (once)
-//   x: 500
-// });
-// gsap.fromTo("#main-line", {drawSVG: "0 5%"}, {duration: 1, drawSVG: "95% 100%"});
-var mySvg = document.querySelector(".mainLine");
-// let clientWidth = document.Page
-// console.log(window.pageYOffset);
-
-// document.addEventListener("scroll",()=>{
-//   console.log(window.pageYOffset,getComputedStyle(mySvg).strokeDashoffset);
-//   mySvg.style.strokeDashoffset = `${-1356 + window.pageYOffset*2}px  `;
-// })
-// mySvg.style.strokeDashoffset = 1000;
