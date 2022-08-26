@@ -6,3 +6,7 @@ src
 gulpfile.js
 package-lock.json
 package.json
+dist/earn.html
+dist/header.html
+dist/promo.html
+
